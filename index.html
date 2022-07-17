@@ -400,6 +400,24 @@
                         </li>
                     </ul>
                 </div>
+                <div class="subscribe-box">
+                    <p class="subscribe-text">
+                        Подпишитесь на рассылку
+                    </p>
+                    <form class="subscribe-form">
+                        <label for="">
+                            <input type="email" name="user-mail" placeholder="E-mail" class="subscribe-input">
+                        </label>
+                        <button class="subscribe-btn" type="button">
+                            <span class="subscribe-btn-text">
+                                Подписаться
+                            </span>
+                            <svg class="subscribe-btn-icon">
+                                <use href="./images/icons.svg#icon-send">
+                            </svg>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </footer>
@@ -410,6 +428,58 @@
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
+            <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
+            <ul class="modal-list">
+                <li class="modal-item">
+                    <label for="" class="modal-label">
+                        <span class="modal-label-title">Имя</span>
+                        <input type="text" class="modal-input" name="user-name">
+                        <svg class="modal-icon" width="12" height="12">
+                            <use href="./images/icons.svg#icon-modal-person"></use>
+                        </svg>
+                    </label>
+                </li>
+                <li class="modal-item">
+                    <label for="" class="modal-label">
+                        <span class="modal-label-title">Телефон</span>
+                        <input type="tel" class="modal-input" name="user-phone" id="user-phone" im-insert="true">
+                        <svg class="modal-icon" width="13" height="13">
+                            <use href="./images/icons.svg#icon-modal-phone"></use>
+                          </svg>
+                    </label>
+                </li>
+                <li class="modal-item">
+                    <label for="" class="modal-label">
+                        <span class="modal-label-title">Почта</span>
+                        <input type="email" class="modal-input" name="uer-email">
+                        <svg class="modal-icon" width="15" height="12">
+                            <use href="./images/icons.svg#icon-modal-mail"></use>
+                          </svg>
+                    </label>
+                </li>
+                <li class="modal-item">
+                    <label for="" class="modal-label">
+                        <span class="modal-label-title">Комментарий</span>
+                        <textarea class="modal-com" placeholder="Введите текст" name="comments" cols="30" rows="10"></textarea>
+                    </label>
+                </li>
+            </ul>
+            <div class="form-checkbox">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="checkbox" class="modal-check visually-hidden">
+                    <span class="form-icon-check" >
+                        <svg class="icon-check" width="11px" height="8px">
+                            <use href="./images/icons.svg#icon-modal-agree"></use>
+                        </svg>
+                    </span>
+                    <span class="checkbox-text">
+                        Соглашаюсь с рассылкой и принимаю <a href="" class="checkbox-link">Условия договора</a>
+                    </span>
+                </label>
+                <button type="submit" class="btn-checkbox">
+                    <span class="form-btn-text">Отправить</span>
+                </button>
+            </div>
         </div>
     </div>
     <script src="./js/modal.js"></script>
