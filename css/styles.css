@@ -632,13 +632,22 @@ ul{
     right: 0;
     width: 30px;
     height: 30px;
+    color: #212121;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     padding: 0%;
     cursor: pointer;
     margin: 8px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    color: var(--animation-button);
+}
+.modal-close-btn .close-img {
+    fill: currentColor;
+}  
 .modal-text{
     font-family: 'Roboto';
     font-style: normal;
@@ -649,6 +658,7 @@ ul{
     letter-spacing: 0.03em;
     color: #212121;
     margin-bottom: 12px;
+
 }
 .modal-input{
     width: 100%;
@@ -671,6 +681,7 @@ ul{
     margin-bottom: 20px;
 }
 .modal-label-title{
+    display: block;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -754,8 +765,7 @@ ul{
     width: 16px;
     height: 15px;
     border: 1px solid #000000;
-    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-    border-radius: 1px;
+    border-radius: 2px;
     background-color: #FFFFFF;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
